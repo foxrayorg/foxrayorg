@@ -1,0 +1,40 @@
+{
+    "en": {
+        "home": "Home",
+        "about": "About",
+        "feature": "Features",
+        "pricing": "Pricing",
+        "review": "Reviews",
+        "contact": "Contact",
+        "hero_title": "The Revolutionary App That Helps To Access Internet Securely",
+        "hero_subtitle": "Welcome to FoxRay, your one-stop solution for unparalleled online privacy..."
+    },
+    "fa": {
+        "home": "خانه",
+        "about": "درباره ما",
+        "feature": "ویژگی‌ها",
+        "pricing": "تعرفه‌ها",
+        "review": "نظرات",
+        "contact": "تماس",
+        "hero_title": "برنامه انقلابی که به شما کمک می‌کند به اینترنت با امنیت دسترسی داشته باشید",
+        "hero_subtitle": "به فاکس ری خوش آمدید، راهکار یک‌پارچه برای حریم خصوصی بی‌نظیر آنلاین..."
+    },
+    "ru": {
+        "home": "Главная",
+        "about": "О нас",
+        "feature": "Особенности",
+        "pricing": "Цены",
+        "review": "Отзывы",
+        "contact": "Контакты",
+        "hero_title": "Революционное приложение для безопасного доступа в интернет"
+    },
+    "zh": {
+        "home": "首页",
+        "about": "关于我们",
+        "feature": "特点",
+        "pricing": "定价",
+        "review": "评论",
+        "contact": "联系",
+        "hero_title": "帮助安全访问互联网的革命性应用程序"
+    }
+}
