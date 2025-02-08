@@ -42,7 +42,12 @@
     "premium_plan": "Premium Plan",
     "powerful_fetures": "Powerful & Awesome Features",
     "currency_sign": "$",
+    "for_1_month": "for 1 Month",
+    "for_3_month": "for 3 Month",
+    "for_6_month": "for 6 Month",
     "price1": "0.49",
+    "price3":"1.39",
+    "price6":"2.59",
     "monthly": "Monthly",
     "yearly": "Yearly",
     "featureStarter": "HighSpeed V2ray Configs",
@@ -136,6 +141,7 @@
     "html_codex": "HTML Codex"
   },
   "ru": {
+    "currency_sign": "₽",
     "home": "Главная",
     "about": "О нас",
     "feature": "Функции",
