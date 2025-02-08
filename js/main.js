@@ -1,114 +1,121 @@
-document.addEventListener('DOMContentLoaded', function() {
+(function ($) {
     "use strict";
-
-    // Language configuration
-    let currentLang = localStorage.getItem('lang') || 'en';
-    let isRTL = ['fa'].includes(currentLang);
-    const htmlElement = document.documentElement;
-    
-    // Set initial attributes
-    htmlElement.setAttribute('dir', isRTL ? 'rtl' : 'ltr');
-    htmlElement.setAttribute('lang', currentLang);
-    htmlElement.style.fontFamily = isRTL ? 'Vazirmatn, sans-serif' : 'inherit';
-
-    // Load translations
-    fetch('translations.json')
-        .then(response => response.json())
-        .then(translations => {
-            updateContent(translations[currentLang]);
-            setupLanguageSwitcher(translations);
-        })
-        .catch(error => console.error('Error loading translations:', error));
-
-    function updateContent(langData) {
-        document.querySelectorAll('[data-i18n]').forEach(element => {
-            const key = element.dataset.i18n;
-            element.textContent = langData[key] || element.textContent;
-        });
-    }
-
-    function setupLanguageSwitcher(translations) {
-        document.querySelectorAll('.lang-select').forEach(button => {
-            button.addEventListener('click', function(e) {
-                e.preventDefault();
-                const lang = this.dataset.lang;
-                localStorage.setItem('lang', lang);
-                currentLang = lang;
-                isRTL = ['fa'].includes(lang);
-
-                // Update document attributes
-                htmlElement.setAttribute('dir', isRTL ? 'rtl' : 'ltr');
-                htmlElement.setAttribute('lang', lang);
-                htmlElement.style.fontFamily = isRTL ? 'Vazirmatn, sans-serif' : 'inherit';
-                document.body.classList.toggle('rtl', isRTL);
-
-                // Update content
-                updateContent(translations[lang]);
-
-                // Reinitialize animations
-                new WOW().init();
-            });
-        });
-    }
-
-    // Spinner
-    function hideSpinner() {
-        setTimeout(() => {
-            const spinner = document.getElementById('spinner');
-            if (spinner) spinner.classList.remove('show');
-        }, 1);
-    }
-    hideSpinner();
-
-    // Initialize animations
-    new WOW().init();
-
-    // Sticky Navbar
-    const navbar = document.querySelector('.navbar');
-    window.addEventListener('scroll', () => {
-        navbar.classList.toggle('sticky-top', window.scrollY > 45);
-        navbar.classList.toggle('shadow-sm', window.scrollY > 45);
+   // Language configuration
+   var currentLang = localStorage.getItem('lang') || 'en';
+   var isRTL = ['fa'].includes(currentLang);
+   // Set initial direction, lang attribute, and font family
+   $('html').attr('dir', isRTL ? 'rtl' : 'ltr')
+    .attr('lang', currentLang)
+    .css('font-family', isRTL ? 'Vazirmatn, sans-serif' : 'inherit');
+   // Load translations
+   $.getJSON('translations.json', function(translations) {
+   updateContent(translations[currentLang]);
+   setupLanguageSwitcher(translations);
     });
-
-    // Smooth scrolling
-    document.querySelectorAll('.navbar-nav a').forEach(link => {
-        link.addEventListener('click', function(e) {
-            if (this.hash) {
-                e.preventDefault();
-                const target = document.querySelector(this.hash);
-                if (target) {
-                    const offsetTop = target.getBoundingClientRect().top + window.pageYOffset - 45;
-                    window.scrollTo({
-                        top: offsetTop,
-                        behavior: 'smooth'
-                    });
-
-                    // Update active class
-                    document.querySelectorAll('.navbar-nav .active').forEach(el => el.classList.remove('active'));
-                    this.closest('a').classList.add('active');
-                }
-            }
-        });
+   function updateContent(langData) {
+   $('[data-i18n]').each(function() {
+   var key = $(this).data('i18n');
+   $(this).text(langData[key] || $(this).text());
     });
-
-    // Back to top button
-    const backToTop = document.querySelector('.back-to-top');
-    if (backToTop) {
-        window.addEventListener('scroll', () => {
-            backToTop.style.display = window.scrollY > 100 ? 'block' : 'none';
-        });
-
-        backToTop.addEventListener('click', (e) => {
-            e.preventDefault();
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
     }
-
-    // Note: The following jQuery plugins need alternative solutions:
-    // - CounterUp
-    // - Owl Carousel
-    // You'll need to implement vanilla JS alternatives for these features
-});
+   function setupLanguageSwitcher(translations) {
+   $('.lang-select').on('click', function(e) {
+   e.preventDefault();
+   var lang = $(this).data('lang');
+   localStorage.setItem('lang', lang);
+   currentLang = lang;
+   isRTL = ['fa'].includes(lang);
+   // Update document attributes and font
+   $('html')
+    .attr('dir', isRTL ? 'rtl' : 'ltr')
+    .attr('lang', lang)
+    .css('font-family', isRTL ? 'Vazirmatn, sans-serif' : 'inherit');
+   $('body').toggleClass('rtl', isRTL);
+   // Update content
+   updateContent(translations[lang]);
+   // Reinitialize plugins if needed
+   new WOW().init();
+   $('[data-toggle="counter-up"]').counterUp({
+   delay: 10,
+   time: 2000
+    });
+    });
+    }
+   // Spinner
+   var spinner = function () {
+   setTimeout(function () {
+   if ($('#spinner').length > 0) {
+   $('#spinner').removeClass('show');
+    }
+    }, 1);
+    };
+   spinner();
+   // Initiate the wowjs
+   new WOW().init();
+   // Sticky Navbar
+   $(window).scroll(function () {
+   if ($(this).scrollTop() > 45) {
+   $('.navbar').addClass('sticky-top shadow-sm');
+    } else {
+   $('.navbar').removeClass('sticky-top shadow-sm');
+    }
+    });
+   // Smooth scrolling on the navbar links
+   $(".navbar-nav a").on('click', function (event) {
+   if (this.hash !== "") {
+   event.preventDefault();
+   $('html, body').animate({
+   scrollTop: $(this.hash).offset().top - 45
+    }, 1500, 'easeInOutExpo');
+   if ($(this).parents('.navbar-nav').length) {
+   $('.navbar-nav .active').removeClass('active');
+   $(this).closest('a').addClass('active');
+    }
+    }
+    });
+   // Back to top button
+   $(window).scroll(function () {
+   if ($(this).scrollTop() > 100) {
+   $('.back-to-top').fadeIn('slow');
+    } else {
+   $('.back-to-top').fadeOut('slow');
+    }
+    });
+   $('.back-to-top').click(function () {
+   $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+   return false;
+    });
+   // Facts counter
+   $('[data-toggle="counter-up"]').counterUp({
+   delay: 10,
+   time: 2000
+    });
+   // Screenshot carousel
+   $(".screenshot-carousel").owlCarousel({
+   autoplay: true,
+   smartSpeed: 1000,
+   loop: true,
+   dots: true,
+   items: 1,
+   rtl: isRTL
+    });
+   // Testimonials carousel
+   $(".testimonial-carousel").owlCarousel({
+   autoplay: true,
+   smartSpeed: 1000,
+   loop: true,
+   center: true,
+   dots: false,
+   nav: true,
+   rtl: isRTL,
+   navText: [
+   '<i class="bi bi-chevron-left"></i>',
+   '<i class="bi bi-chevron-right"></i>'
+    ],
+   responsive: {
+   0: { items: 1 },
+   768: { items: 2 },
+   992: { items: 3 }
+    }
+    });
+    })(jQuery);
