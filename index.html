@@ -51,7 +51,7 @@
           style="width: 3rem; height: 3rem"
           role="status"
         >
-          <span class="sr-only">Loading...</span>
+          <span class="sr-only" data-i18n="spinner_text">Loading...</span>
         </div>
       </div>
       <!-- Spinner End -->
@@ -62,7 +62,7 @@
           class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0"
         >
           <a href="" class="navbar-brand p-0">
-            <h1 class="m-0">FoXray</h1>
+            <h1 class="m-0" data-i18n="app_name">FoXray</h1>
             <!-- <img src="img/logo.png" alt="Logo"> -->
           </a>
           <button
@@ -117,20 +117,20 @@
             <a
               href="#download"
               class="btn btn-primary-gradient rounded-pill py-2 px-4 ms-3 d-none d-lg-block"
+              data-i18n="cta_download"
               >Get It For Free!</a
             >
           </div>
         </nav>
-        <!-- Add this inside the navbar after the other nav items -->
 
         <div class="container-xxl bg-primary hero-header">
           <div class="container px-lg-5">
             <div class="row g-5">
               <div class="col-lg-8 text-center text-lg-start">
-                <h1 class="text-white mb-4 animated slideInDown">
+                <h1 class="text-white mb-4 animated slideInDown" data-i18n="hero_title">
                   The Revolutionary App That Helps To Access Internet Securely
                 </h1>
-                <p class="text-white pb-3 animated slideInDown">
+                <p class="text-white pb-3 animated slideInDown" data-i18n="hero_subtitle">
                   Welcome to FoxRay, your one-stop solution for unparalleled
                   online privacy and freedom. With FoxRay, you can browse the
                   web anonymously, unblock your favorite websites, and secure
@@ -139,11 +139,13 @@
                 <a
                   href="#about"
                   class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill me-3 animated slideInLeft"
+                  data-i18n="read_more"
                   >Read More</a
                 >
                 <a
                   href="#download"
                   class="btn btn-secondary-gradient py-sm-3 px-4 px-sm-5 rounded-pill animated slideInRight"
+                  data-i18n="download_now"
                   >Download Now!</a
                 >
               </div>
@@ -168,9 +170,9 @@
         <div class="container py-5 px-lg-5">
           <div class="row g-5 align-items-center">
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-              <h5 class="text-primary-gradient fw-medium">About App</h5>
-              <h1 class="mb-4">#1 App For Your Internet</h1>
-              <p class="mb-4">
+              <h5 class="text-primary-gradient fw-medium" data-i18n="about_app">About App</h5>
+              <h1 class="mb-4" data-i18n="about_title">#1 App For Your Internet</h1>
+              <p class="mb-4" data-i18n="about_subtitle">
                 Access geo-restricted content, websites, and apps from anywhere
                 in the world. While protecting your identity and sensitive data
                 from hackers and trackers.
@@ -183,7 +185,7 @@
                     ></i>
                     <div class="ms-3">
                       <h2 class="mb-0" data-toggle="counter-up">13000</h2>
-                      <p class="text-primary-gradient mb-0">Active Installs</p>
+                      <p class="text-primary-gradient mb-0" data-i18n="active_installs">Active Installs</p>
                     </div>
                   </div>
                 </div>
@@ -194,7 +196,7 @@
                     ></i>
                     <div class="ms-3">
                       <h2 class="mb-0" data-toggle="counter-up">148</h2>
-                      <p class="text-secondary-gradient mb-0">
+                      <p class="text-secondary-gradient mb-0" data-i18n="clients_reviews">
                         Clients Reviews
                       </p>
                     </div>
@@ -204,6 +206,7 @@
               <a
                 href="#download"
                 class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill mt-3"
+                data-i18n="get_started"
                 >Download Now!</a
               >
             </div>
@@ -223,8 +226,8 @@
       <div class="container-xxl py-5" id="feature">
         <div class="container py-5 px-lg-5">
           <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h5 class="text-primary-gradient fw-medium">App Features</h5>
-            <h1 class="mb-5">Awesome Features</h1>
+            <h5 class="text-primary-gradient fw-medium" data-i18n="feature_section">App Features</h5>
+            <h1 class="mb-5" data-i18n="features_title">Awesome Features</h1>
           </div>
           <div class="row g-4">
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -235,8 +238,8 @@
                 >
                   <i class="fa fa-eye text-white fs-4"></i>
                 </div>
-                <h5 class="mb-3">Global Server Network</h5>
-                <p class="m-0">
+                <h5 class="mb-3" data-i18n="feature1_title">Global Server Network</h5>
+                <p class="m-0" data-i18n="feature1_desc">
                   Servers everywhere! No matter where you are, we've got you
                   covered for high-speed, secure browsing.
                 </p>
@@ -250,8 +253,8 @@
                 >
                   <i class="fa fa-layer-group text-white fs-4"></i>
                 </div>
-                <h5 class="mb-3">High-Speed Servers</h5>
-                <p class="m-0">
+                <h5 class="mb-3" data-i18n="feature2_title">High-Speed Servers</h5>
+                <p class="m-0" data-i18n="feature2_desc">
                   Choose from a vast network of global VPN servers for a fast
                   and reliable experience.
                 </p>
@@ -265,8 +268,8 @@
                 >
                   <i class="fa fa-edit text-white fs-4"></i>
                 </div>
-                <h5 class="mb-3">Military-Grade Encryption</h5>
-                <p class="m-0">
+                <h5 class="mb-3" data-i18n="feature3_title">Military-Grade Encryption</h5>
+                <p class="m-0" data-i18n="feature3_desc">
                   Your online activities are secure with AES 256-bit encryption.
                 </p>
               </div>
@@ -279,8 +282,8 @@
                 >
                   <i class="fa fa-shield-alt text-white fs-4"></i>
                 </div>
-                <h5 class="mb-3">Unlimited Bandwidth</h5>
-                <p class="m-0">
+                <h5 class="mb-3" data-i18n="feature4_title">Unlimited Bandwidth</h5>
+                <p class="m-0" data-i18n="feature4_desc">
                   Stream, download, and browse as much as you want with no
                   limits.
                 </p>
@@ -294,8 +297,8 @@
                 >
                   <i class="fa fa-cloud text-white fs-4"></i>
                 </div>
-                <h5 class="mb-3">One-Tap Connect</h5>
-                <p class="m-0">
+                <h5 class="mb-3" data-i18n="feature5_title">One-Tap Connect</h5>
+                <p class="m-0" data-i18n="feature5_desc">
                   Get online privacy and security with just one tap.
                 </p>
               </div>
@@ -308,8 +311,8 @@
                 >
                   <i class="fa fa-mobile-alt text-white fs-4"></i>
                 </div>
-                <h5 class="mb-3">Cross-Platform Support</h5>
-                <p class="m-0">Available for Android, iOS, Windows, and Mac.</p>
+                <h5 class="mb-3" data-i18n="feature6_title">Cross-Platform Support</h5>
+                <p class="m-0" data-i18n="feature6_desc">Available for Android, iOS, Windows, and Mac.</p>
               </div>
             </div>
           </div>
@@ -322,26 +325,24 @@
         <div class="container py-5 px-lg-5">
           <div class="row g-5 align-items-center">
             <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
-              <h5 class="text-primary-gradient fw-medium">Screenshot</h5>
-              <h1 class="mb-4">
+              <h5 class="text-primary-gradient fw-medium" data-i18n="screenshot_section">Screenshot</h5>
+              <h1 class="mb-4" data-i18n="screenshot_title">
                 User Friendly interface And Very Easy To Use VPN App
               </h1>
               <p class="mb-4"></p>
               <p>
-                <i class="fa fa-check text-primary-gradient me-3"></i>Always
-                Free
+                <i class="fa fa-check text-primary-gradient me-3"></i><span data-i18n="screenshot_feature1">Always Free</span>
               </p>
               <p>
-                <i class="fa fa-check text-primary-gradient me-3"></i>Super
-                Speed Servers
+                <i class="fa fa-check text-primary-gradient me-3"></i><span data-i18n="screenshot_feature2">Super Speed Servers</span>
               </p>
               <p class="mb-4">
-                <i class="fa fa-check text-primary-gradient me-3"></i>Servers Of
-                All Countries
+                <i class="fa fa-check text-primary-gradient me-3"></i><span data-i18n="screenshot_feature3">Servers Of All Countries</span>
               </p>
               <a
                 href="#download"
                 class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill mt-3"
+                data-i18n="download_now"
                 >Download Now!</a
               >
             </div>
@@ -364,8 +365,8 @@
       <div class="container-xxl py-5">
         <div class="container py-5 px-lg-5">
           <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
-            <h5 class="text-primary-gradient fw-medium">How It Works</h5>
-            <h1 class="mb-5">3 Easy Steps</h1>
+            <h5 class="text-primary-gradient fw-medium" data-i18n="process_section">How It Works</h5>
+            <h1 class="mb-5" data-i18n="process_title">3 Easy Steps</h1>
           </div>
           <div class="row gy-5 gx-4 justify-content-center">
             <div
@@ -379,8 +380,8 @@
                 >
                   <i class="fa fa-cog fa-3x text-white"></i>
                 </div>
-                <h5 class="mt-4 mb-3">Install the App</h5>
-                <p class="mb-0">
+                <h5 class="mt-4 mb-3" data-i18n="process_step1">Install the App</h5>
+                <p class="mb-0" data-i18n="process_step1_desc">
                   Download the app from the playstore and install it.
                 </p>
               </div>
@@ -396,8 +397,8 @@
                 >
                   <i class="fa fa-address-card fa-3x text-white"></i>
                 </div>
-                <h5 class="mt-4 mb-3">Wait for Fetching Servers</h5>
-                <p class="mb-0">Wait for the servers to load and synchronize</p>
+                <h5 class="mt-4 mb-3" data-i18n="process_step2">Wait for Fetching Servers</h5>
+                <p class="mb-0" data-i18n="process_step2_desc">Wait for the servers to load and synchronize</p>
               </div>
             </div>
             <div
@@ -411,8 +412,8 @@
                 >
                   <i class="fa fa-check fa-3x text-white"></i>
                 </div>
-                <h5 class="mt-4 mb-3">Enjoy The Speed!</h5>
-                <p class="mb-0">Surf the Free Internet and enjoy!</p>
+                <h5 class="mt-4 mb-3" data-i18n="process_step3">Enjoy The Speed!</h5>
+                <p class="mb-0" data-i18n="process_step3_desc">Surf the Free Internet and enjoy!</p>
               </div>
             </div>
           </div>
@@ -432,9 +433,9 @@
               />
             </div>
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-              <h5 class="text-primary-gradient fw-medium">Download</h5>
-              <h1 class="mb-4">Download The Latest Version Of Our App</h1>
-              <p class="mb-4">Get our app from the official stores</p>
+              <h5 class="text-primary-gradient fw-medium" data-i18n="download_section">Download</h5>
+              <h1 class="mb-4" data-i18n="download_title">Download The Latest Version Of Our App</h1>
+              <p class="mb-4" data-i18n="downloadSubtitle">Get our app from the official stores</p>
               <div class="row g-4">
                 <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
                   <a
@@ -443,8 +444,8 @@
                   >
                     <i class="fab fa-apple fa-3x text-white flex-shrink-0"></i>
                     <div class="ms-3">
-                      <p class="text-white mb-0">Available On</p>
-                      <h5 class="text-white mb-0">App Store</h5>
+                      <p class="text-white mb-0" data-i18n="appStore">Available On</p>
+                      <h5 class="text-white mb-0" data-i18n="appStore_name">App Store</h5>
                     </div>
                   </a>
                 </div>
@@ -457,8 +458,8 @@
                       class="fab fa-android fa-3x text-white flex-shrink-0"
                     ></i>
                     <div class="ms-3">
-                      <p class="text-white mb-0">Available On</p>
-                      <h5 class="text-white mb-0">Play Store</h5>
+                      <p class="text-white mb-0" data-i18n="playStore">Available On</p>
+                      <h5 class="text-white mb-0" data-i18n="playStore_name">Play Store</h5>
                     </div>
                   </a>
                 </div>
@@ -471,8 +472,8 @@
                       class="fab fa-android fa-3x text-white flex-shrink-0"
                     ></i>
                     <div class="ms-3">
-                      <p class="text-white mb-0">Download directly</p>
-                      <h5 class="text-white mb-0">APK</h5>
+                      <p class="text-white mb-0" data-i18n="apkDownload_desc">Download directly</p>
+                      <h5 class="text-white mb-0" data-i18n="apkDownload_name">APK</h5>
                     </div>
                   </a>
                 </div>
@@ -487,8 +488,8 @@
       <div class="container-xxl py-5" id="pricing">
         <div class="container py-5 px-lg-5">
           <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h5 class="text-primary-gradient fw-medium">Pricing Plan</h5>
-            <h1 class="mb-5">Choose Your Plan</h1>
+            <h5 class="text-primary-gradient fw-medium" data-i18n="pricing_section">Pricing Plan</h5>
+            <h1 class="mb-5" data-i18n="pricing_title">Choose Your Plan</h1>
           </div>
           <div
             class="tab-class text-center pricing wow fadeInUp"
@@ -502,12 +503,18 @@
                   class="nav-link active"
                   data-bs-toggle="pill"
                   href="#tab-1"
+                  data-i18n="monthly"
                 >
                   Monthly
                 </button>
               </li>
               <li class="nav-item">
-                <button class="nav-link" data-bs-toggle="pill" href="#tab-2">
+                <button
+                  class="nav-link"
+                  data-bs-toggle="pill"
+                  href="#tab-2"
+                  data-i18n="yearly"
+                >
                   Yearly
                 </button>
               </li>
@@ -518,15 +525,15 @@
                   <div class="col-lg-4">
                     <div class="bg-light rounded">
                       <div class="border-bottom p-4 mb-4">
-                        <h4 class="text-primary-gradient mb-1">Starter Plan</h4>
-                        <span>Powerful & Awesome Features</span>
+                        <h4 class="text-primary-gradient mb-1" data-i18n="starter_plan">Starter Plan</h4>
+                        <span data-i18n="starter_plan_desc">Powerful & Awesome Features</span>
                       </div>
                       <div class="p-4 pt-0">
                         <h1 class="mb-3">
                           <small
                             class="align-top"
                             style="font-size: 22px; line-height: 45px"
-                            >$</small
+                            >__RESULT__lt;/small
                           >0.49<small
                             class="align-bottom"
                             style="font-size: 16px; line-height: 40px"
@@ -535,25 +542,25 @@
                           >
                         </h1>
                         <div class="d-flex justify-content-between mb-3">
-                          <span>HighSpeed V2ray Configs</span
+                          <span data-i18n="featureStarter">HighSpeed V2ray Configs</span
                           ><i
                             class="fa fa-check text-primary-gradient pt-1"
                           ></i>
                         </div>
                         <div class="d-flex justify-content-between mb-3">
-                          <span>Wide Location Servers</span
+                          <span data-i18n="feature_advance">Wide Location Servers</span
                           ><i
                             class="fa fa-check text-primary-gradient pt-1"
                           ></i>
                         </div>
                         <div class="d-flex justify-content-between mb-3">
-                          <span>No Bandwidth Limit</span
+                          <span data-i18n="feature_premium">No Bandwidth Limit</span
                           ><i
                             class="fa fa-check text-primary-gradient pt-1"
                           ></i>
                         </div>
                         <div class="d-flex justify-content-between mb-2">
-                          <span>Unlimited Configs</span
+                          <span data-i18n="feature_common">Unlimited Configs</span
                           ><i
                             class="fa fa-check text-primary-gradient pt-1"
                           ></i>
@@ -561,6 +568,7 @@
                         <a
                           href="https://t.me/foxraybot?start=website"
                           class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4"
+                          data-i18n="get_started"
                           >Get Started</a
                         >
                       </div>
@@ -569,15 +577,15 @@
                   <div class="col-lg-4">
                     <div class="bg-light rounded border">
                       <div class="border-bottom p-4 mb-4">
-                        <h4 class="text-primary-gradient mb-1">Advance Plan</h4>
-                        <span>Powerful & Awesome Features</span>
+                        <h4 class="text-primary-gradient mb-1" data-i18n="advance_plan">Advance Plan</h4>
+                        <span data-i18n="advance_plan_desc">Powerful & Awesome Features</span>
                       </div>
                       <div class="p-4 pt-0">
                         <h1 class="mb-3">
                           <small
                             class="align-top"
                             style="font-size: 22px; line-height: 45px"
-                            >$</small
+                            >__RESULT__lt;/small
                           >1.39<small
                             class="align-bottom"
                             style="font-size: 16px; line-height: 40px"
@@ -586,25 +594,25 @@
                           >
                         </h1>
                         <div class="d-flex justify-content-between mb-3">
-                          <span>HighSpeed V2ray Configs</span
+                          <span data-i18n="featureStarter">HighSpeed V2ray Configs</span
                           ><i
                             class="fa fa-check text-primary-gradient pt-1"
                           ></i>
                         </div>
                         <div class="d-flex justify-content-between mb-3">
-                          <span>Wide Location Servers</span
+                          <span data-i18n="feature_advance">Wide Location Servers</span
                           ><i
                             class="fa fa-check text-primary-gradient pt-1"
                           ></i>
                         </div>
                         <div class="d-flex justify-content-between mb-3">
-                          <span>No Bandwidth Limit</span
+                          <span data-i18n="feature_premium">No Bandwidth Limit</span
                           ><i
                             class="fa fa-check text-primary-gradient pt-1"
                           ></i>
                         </div>
                         <div class="d-flex justify-content-between mb-2">
-                          <span>Unlimited Configs</span
+                          <span data-i18n="feature_common">Unlimited Configs</span
                           ><i
                             class="fa fa-check text-primary-gradient pt-1"
                           ></i>
@@ -612,6 +620,7 @@
                         <a
                           href="https://t.me/foxraybot?start=website"
                           class="btn btn-secondary-gradient rounded-pill py-2 px-4 mt-4"
+                          data-i18n="get_started"
                           >Get Started</a
                         >
                       </div>
@@ -620,15 +629,15 @@
                   <div class="col-lg-4">
                     <div class="bg-light rounded">
                       <div class="border-bottom p-4 mb-4">
-                        <h4 class="text-primary-gradient mb-1">Premium Plan</h4>
-                        <span>Powerful & Awesome Features</span>
+                        <h4 class="text-primary-gradient mb-1" data-i18n="premium_plan">Premium Plan</h4>
+                        <span data-i18n="premium_plan_desc">Powerful & Awesome Features</span>
                       </div>
                       <div class="p-4 pt-0">
                         <h1 class="mb-3">
                           <small
                             class="align-top"
                             style="font-size: 22px; line-height: 45px"
-                            >$</small
+                            >__RESULT__lt;/small
                           >2.59<small
                             class="align-bottom"
                             style="font-size: 16px; line-height: 40px"
@@ -637,25 +646,25 @@
                           >
                         </h1>
                         <div class="d-flex justify-content-between mb-3">
-                          <span>HighSpeed V2ray Configs</span
+                          <span data-i18n="featureStarter">HighSpeed V2ray Configs</span
                           ><i
                             class="fa fa-check text-primary-gradient pt-1"
                           ></i>
                         </div>
                         <div class="d-flex justify-content-between mb-3">
-                          <span>Wide Location Servers</span
+                          <span data-i18n="feature_advance">Wide Location Servers</span
                           ><i
                             class="fa fa-check text-primary-gradient pt-1"
                           ></i>
                         </div>
                         <div class="d-flex justify-content-between mb-3">
-                          <span>No Bandwidth Limit</span
+                          <span data-i18n="feature_premium">No Bandwidth Limit</span
                           ><i
                             class="fa fa-check text-primary-gradient pt-1"
                           ></i>
                         </div>
                         <div class="d-flex justify-content-between mb-2">
-                          <span>Unlimited Configs</span
+                          <span data-i18n="feature_common">Unlimited Configs</span
                           ><i
                             class="fa fa-check text-primary-gradient pt-1"
                           ></i>
@@ -663,6 +672,7 @@
                         <a
                           href="https://t.me/foxraybot?start=website"
                           class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4"
+                          data-i18n="get_started"
                           >Get Started</a
                         >
                       </div>
@@ -675,15 +685,15 @@
                   <div class="col-lg-4">
                     <div class="bg-light rounded">
                       <div class="border-bottom p-4 mb-4">
-                        <h4 class="text-primary-gradient mb-1">Premium Plan</h4>
-                        <span>Powerful & Awesome Features</span>
+                        <h4 class="text-primary-gradient mb-1" data-i18n="premium_plan">Premium Plan</h4>
+                        <span data-i18n="premium_plan_desc">Powerful & Awesome Features</span>
                       </div>
                       <div class="p-4 pt-0">
                         <h1 class="mb-3">
                           <small
                             class="align-top"
                             style="font-size: 22px; line-height: 45px"
-                            >$</small
+                            >__RESULT__lt;/small
                           >4.99<small
                             class="align-bottom"
                             style="font-size: 16px; line-height: 40px"
@@ -691,25 +701,25 @@
                           >
                         </h1>
                         <div class="d-flex justify-content-between mb-3">
-                          <span>HighSpeed V2ray Configs</span
+                          <span data-i18n="featureStarter">HighSpeed V2ray Configs</span
                           ><i
                             class="fa fa-check text-primary-gradient pt-1"
                           ></i>
                         </div>
                         <div class="d-flex justify-content-between mb-3">
-                          <span>Wide Location Servers</span
+                          <span data-i18n="feature_advance">Wide Location Servers</span
                           ><i
                             class="fa fa-check text-primary-gradient pt-1"
                           ></i>
                         </div>
                         <div class="d-flex justify-content-between mb-3">
-                          <span>No Bandwidth Limit</span
+                          <span data-i18n="feature_premium">No Bandwidth Limit</span
                           ><i
                             class="fa fa-check text-primary-gradient pt-1"
                           ></i>
                         </div>
                         <div class="d-flex justify-content-between mb-2">
-                          <span>Unlimited Configs</span
+                          <span data-i18n="feature_common">Unlimited Configs</span
                           ><i
                             class="fa fa-check text-primary-gradient pt-1"
                           ></i>
@@ -717,6 +727,7 @@
                         <a
                           href="https://t.me/foxraybot?start=website"
                           class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4"
+                          data-i18n="get_started"
                           >Get Started</a
                         >
                       </div>
@@ -734,8 +745,8 @@
       <div class="container-xxl py-5" id="review">
         <div class="container py-5 px-lg-5">
           <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h5 class="text-primary-gradient fw-medium">Testimonial</h5>
-            <h1 class="mb-5">What Say Our Clients!</h1>
+            <h5 class="text-primary-gradient fw-medium" data-i18n="testimonial_section">Testimonial</h5>
+            <h1 class="mb-5" data-i18n="testimonial_title">What Say Our Clients!</h1>
           </div>
           <div
             class="owl-carousel testimonial-carousel wow fadeInUp"
@@ -870,13 +881,13 @@
       <div class="container-xxl py-5" id="contact">
         <div class="container py-5 px-lg-5">
           <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h5 class="text-primary-gradient fw-medium">Contact Us</h5>
-            <h1 class="mb-5">Get In Touch!</h1>
+            <h5 class="text-primary-gradient fw-medium" data-i18n="contact_section">Contact Us</h5>
+            <h1 class="mb-5" data-i18n="contact_title">Get In Touch!</h1>
           </div>
           <div class="row justify-content-center">
             <div class="col-lg-9">
               <div class="wow fadeInUp" data-wow-delay="0.3s">
-                <p class="text-center mb-4">
+                <p class="text-center mb-4" data-i18n="contact_subtitle">
                   The contact form is currently inactive. Get a functional and
                   working contact form with Ajax & PHP in a few minutes. Just
                   copy and paste the files, add a little code and you're done.
@@ -892,7 +903,7 @@
                           id="name"
                           placeholder="Your Name"
                         />
-                        <label for="name">Your Name</label>
+                        <label for="name" data-i18n="contact_name">Your Name</label>
                       </div>
                     </div>
                     <div class="col-md-6">
@@ -903,7 +914,7 @@
                           id="email"
                           placeholder="Your Email"
                         />
-                        <label for="email">Your Email</label>
+                        <label for="email" data-i18n="contact_email">Your Email</label>
                       </div>
                     </div>
                     <div class="col-12">
@@ -914,7 +925,7 @@
                           id="subject"
                           placeholder="Subject"
                         />
-                        <label for="subject">Subject</label>
+                        <label for="subject" data-i18n="contact_subject">Subject</label>
                       </div>
                     </div>
                     <div class="col-12">
@@ -925,13 +936,14 @@
                           id="message"
                           style="height: 150px"
                         ></textarea>
-                        <label for="message">Message</label>
+                        <label for="message" data-i18n="contact_message">Message</label>
                       </div>
                     </div>
                     <div class="col-12 text-center">
                       <button
                         class="btn btn-primary-gradient rounded-pill py-3 px-5"
                         type="submit"
+                        data-i18n="contact_submit"
                       >
                         Send Message
                       </button>
@@ -953,13 +965,12 @@
         <div class="container py-5 px-lg-5">
           <div class="row g-5">
             <div class="col-md-6 col-lg-3">
-              <h4 class="text-white mb-4">Address</h4>
+              <h4 class="text-white mb-4" data-i18n="footer_address_section">Address</h4>
               <p>
-                <i class="fa fa-map-marker-alt me-3"></i>1262 Beahan Squares
-                Apt. 426 Bergnaumville Canada
+                <i class="fa fa-map-marker-alt me-3"></i><span data-i18n="footer_address">1262 Beahan Squares Apt. 426 Bergnaumville Canada</span>
               </p>
-              <p><i class="fa fa-phone-alt me-3"></i>+1 543 542 9957</p>
-              <p><i class="fa fa-envelope me-3"></i>info@foxray.org</p>
+              <p><i class="fa fa-phone-alt me-3"></i><span data-i18n="footer_phone">+1 543 542 9957</span></p>
+              <p><i class="fa fa-envelope me-3"></i><span data-i18n="footer_email">info@foxray.org</span></p>
               <div class="d-flex pt-2">
                 <a
                   class="btn btn-outline-light btn-social"
@@ -969,32 +980,21 @@
               </div>
             </div>
             <div class="col-md-6 col-lg-3">
-              <h4 class="text-white mb-4">Quick Link</h4>
-              <a class="btn btn-link" href="#about">About Us</a>
-              <a class="btn btn-link" href="https://t.me/FoxraySupport"
-                >Contact Us</a
-              >
-              <a class="btn btn-link" href="https://foxray.org/privacypolicy.md"
-                >Privacy Policy</a
-              >
+              <h4 class="text-white mb-4" data-i18n="footer_quick_link_section">Quick Link</h4>
+              <a class="btn btn-link" href="#about" data-i18n="footer_quick_link1">About Us</a>
+              <a class="btn btn-link" href="https://t.me/FoxraySupport" data-i18n="footer_quick_link2">Contact Us</a>
+              <a class="btn btn-link" href="https://foxray.org/privacypolicy.md" data-i18n="footer_quick_link3">Privacy Policy</a>
             </div>
             <div class="col-md-6 col-lg-3">
-              <h4 class="text-white mb-4">Popular Link</h4>
-              <a class="btn btn-link" href="#about">About Us</a>
-              <a class="btn btn-link" href="https://t.me/FoxraySupport"
-                >Contact Us</a
-              >
-              <a class="btn btn-link" href="https://foxray.org/privacypolicy.md"
-                >Privacy Policy</a
-              >
-              <!-- <a class="btn btn-link" href="">Terms & Condition</a>
-                        <a class="btn btn-link" href="">Career</a>-->
+              <h4 class="text-white mb-4" data-i18n="footer_popular_link_section">Popular Link</h4>
+              <a class="btn btn-link" href="#about" data-i18n="footer_popular_link1">About Us</a>
+              <a class="btn btn-link" href="https://t.me/FoxraySupport" data-i18n="footer_popular_link2">Contact Us</a>
+              <a class="btn btn-link" href="https://foxray.org/privacypolicy.md" data-i18n="footer_popular_link3">Privacy Policy</a>
             </div>
             <div class="col-md-6 col-lg-3">
-              <h4 class="text-white mb-4">Newsletter</h4>
+              <h4 class="text-white mb-4" data-i18n="footer_newsletter_section">Newsletter</h4>
               <p>
-                Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi.
-                Curabitur facilisis ornare velit non vulpu
+                <span data-i18n="footer_newsletter_desc">Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulpu</span>
               </p>
               <div class="position-relative w-100 mt-3">
                 <input
@@ -1002,10 +1002,12 @@
                   type="text"
                   placeholder="Your Email"
                   style="height: 48px"
+                  data-i18n="footer_newsletter_input"
                 />
                 <button
                   type="button"
                   class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"
+                  data-i18n="footer_newsletter_subscribe"
                 >
                   <i class="fa fa-paper-plane text-primary-gradient fs-4"></i>
                 </button>
@@ -1017,18 +1019,15 @@
           <div class="copyright">
             <div class="row">
               <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                &copy; <a class="border-bottom" href="#">FoXray VPN App</a>, All
+                &copy; <a class="border-bottom" href="#" data-i18n="footer_copyright">FoXray VPN App</a>, All
                 Right Reserved.
 
-                <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
                 Designed By
-                <a class="border-bottom" href="https://htmlcodex.com"
-                  >HTML Codex</a
-                >
+                <a class="border-bottom" href="https://htmlcodex.com" data-i18n="footer_design_credit">HTML Codex</a>
               </div>
               <div class="col-md-6 text-center text-md-end">
                 <div class="footer-menu">
-                  <a href="">Home</a>
+                  <a href="#" data-i18n="footer_menu_home">Home</a>
                 </div>
               </div>
             </div>
